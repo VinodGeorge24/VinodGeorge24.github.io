@@ -8,4 +8,16 @@ window.onload = () => {
 
   hamburger.addEventListener('click', () => toggle(navMenu, 'is-active'));
   Array.from(navItems).forEach(e => e.addEventListener('click', toggleNav));
+
+  const flipCards = document.querySelectorAll('.flip-card');
+
+  const toggleFlip = (card) => {
+    card.classList.toggle('is-flipped');
+    const isFlipped = card.classList.contains('is-flipped');
+    card.setAttribute('aria-pressed', String(isFlipped));
+  };
+
+  Array.from(flipCards).forEach((card) => {
+    card.addEventListener('click', () => toggleFlip(card));
+  });
 }

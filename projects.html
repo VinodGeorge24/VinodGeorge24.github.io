@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Projects | Vinod George</title>
+	<!-- css files -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+	<link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+	<meta name="author" content="Vinod George">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	<body>
+		<!-- Navbar -->
+		<nav class="nav container void-background">
+			<!-- This "nav-menu" is hidden on mobile -->
+			<!-- Add the modifier "is-active" to display it on mobile -->
+			<div class="nav-left">
+			</div>
+
+			<div class="nav-right nav-menu">
+				<a class="nav-item" href="index.html">Home</a>
+				<a class="nav-item" href="about.html">About</a>
+				<a class="nav-item" href="projects.html">Projects</a>
+				<a class="nav-item" href="social.html">Social</a>
+			</div>
+
+			<!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+			<!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
+			<span class="nav-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</span>
+		</nav>
+		
+		<!-- Projects -->
+		<section id="projects" class="section section-2">
+			<div class="container">
+				<div class="has-text-centered">
+					<h3 class="title is-3">Projects</h3>
+				</div>
+				
+				<div class="columns is-multiline is-desktop">
+					<!-- Project 1 -->
+					<div class="column is-4">
+						<button type="button" class="flip-card" aria-label="NBA Parlay Recommendation System - click to view details" aria-pressed="false">
+							<div class="flip-card-inner">
+								<div class="flip-card-face flip-card-front box">
+									<h4 class="project-title">NBA Parlay Recommendation System</h4>
+									<p class="project-subtitle">Data pipeline for live NBA statistics and parlay recommendations</p>
+									<p class="flip-hint">Click to view details</p>
+								</div>
+								<div class="flip-card-face flip-card-back box">
+									<div class="project-summary">
+										<p>• Data pipeline ingests live NBA statistics and engineers player-level features</p>
+										<p>• Generates parlay recommendations using predictive models</p>
+										<p>• Python backend with React frontend and interactive visualizations</p>
+									</div>
+									<p class="project-tools"><strong>Tools:</strong> Python, Pandas, Flask/FastAPI, React, Chart.js</p>
+								</div>
+							</div>
+						</button>
+					</div>
+					<!-- Project 2 -->
+					<div class="column is-4">
+						<button type="button" class="flip-card" aria-label="Personalized Media Recommendation System - click to view details" aria-pressed="false">
+							<div class="flip-card-inner">
+								<div class="flip-card-face flip-card-front box">
+									<h4 class="project-title">Personalized Media Recommendation System</h4>
+									<p class="project-subtitle">Content-based recommendation engine using NLP and user preferences</p>
+									<p class="flip-hint">Click to view details</p>
+								</div>
+								<div class="flip-card-face flip-card-back box">
+									<div class="project-summary">
+										<p>• Content-based recommendation system using NLP techniques</p>
+										<p>• Integrated sentiment analysis and click logging for ranking improvements</p>
+										<p>• Iterative model refinement based on user interaction data</p>
+									</div>
+									<p class="project-tools"><strong>Tools:</strong> Python, Flask, NLP, TF-IDF / embeddings, React, Tailwind</p>
+								</div>
+							</div>
+						</button>
+					</div>
+					<!-- Project 3 -->
+					<div class="column is-4">
+						<button type="button" class="flip-card" aria-label="NFL Wide Receiver Traits Case Study - click to view details" aria-pressed="false">
+							<div class="flip-card-inner">
+								<div class="flip-card-face flip-card-front box">
+									<h4 class="project-title">NFL Wide Receiver Traits Case Study</h4>
+									<p class="project-subtitle">Analytical study of physical and technical traits predicting performance</p>
+									<p class="flip-hint">Click to view details</p>
+								</div>
+								<div class="flip-card-face flip-card-back box">
+									<div class="project-summary">
+										<p>• Part 1: Exploratory Data Analysis and feature engineering</p>
+										<p>• Part 2: Regression modeling to quantify trait importance</p>
+										<p>• Part 3: Clustering analysis to identify receiver archetypes</p>
+									</div>
+									<p class="project-tools"><strong>Tools:</strong> Python, Pandas, Matplotlib, Scikit-learn</p>
+								</div>
+							</div>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Footer -->
+		<section class="section-4 has-text-centered container">
+			Vinod George
+		</section>
+		
+		<!-- Scripts  -->
+		<script src="controller.js"></script>		
+	</body>	
+</html>
+
